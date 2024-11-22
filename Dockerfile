@@ -13,4 +13,4 @@ ENV SERVER_PORT=4000
 
 EXPOSE ${SERVER_PORT}
 
-ENTRYPOINT [ "java", "-jar", "-Dspring.profiles.active=railway", "target/day15_lecture-0.0.1-SNAPSHOT.jar" ]
+ENTRYPOINT [ "java", "-jar", "target/day15_lecture-0.0.1-SNAPSHOT.jar" ]
