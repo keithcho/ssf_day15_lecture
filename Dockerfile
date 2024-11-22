@@ -7,7 +7,7 @@ WORKDIR ${APP_DIR}
 COPY pom.xml .
 COPY src src
 
-RUN mvn package -Dmaven.test.skip=true
+RUN mvn package -Dmaven.test.skip=true -Dspring.profiles.active=railway
 
 ENV SERVER_PORT=4000
 
